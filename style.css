@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 0px 30px 0px;
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#headerTitle header{
+    font-size: 40px;
+    color: rgb(0 147 175);
+    margin-bottom: 30px;;
+} 
+#imageForGame img {
+    height: 400px;
+    width: 500px;
+}
+#buttonID button{
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(118 213 231);
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+}
+#computersImagine {
+    visibility: hidden;
+}
+#usersImagine {
+    visibility: hidden;
+}
+.matchResult {
+    margin-top: 40px;
+    align-items: center;
+}
+.imagineAppearance {
+    margin-top: 20px;
+    height: 170px;
+    width: 170px;
+}
+.leftAndRightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
