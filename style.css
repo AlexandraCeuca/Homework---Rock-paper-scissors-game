@@ -38,24 +38,34 @@
     font-size: 22px;
 }
 #computersImagine {
-    visibility: hidden;
+    display: none;
 }
 #usersImagine {
-    visibility: hidden;
+    display: none;
 }
 .matchResult {
     margin-top: 40px;
     align-items: center;
-}
-.imagineAppearance {
-    margin-top: 20px;
-    height: 170px;
-    width: 170px;
 }
 .leftAndRightContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+}
+
+.imagineAppearance {
+    margin-top: 20px;
+    height: 170px;
+    width: 170px;
+    -webkit-animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
