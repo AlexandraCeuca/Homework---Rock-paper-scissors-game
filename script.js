@@ -9,14 +9,12 @@ playGameButton.addEventListener("click", function play() {
     let computer = chooseOption (); 
     let computersImagineChoice= document.getElementById("computersImagine");
     computersImagineChoice.src= `./photos/${computer}.JPG`;
-    computersImagineChoice.style.visibility = "visible";
+    computersImagineChoice.style.display = "block";
 
     let user = chooseOption ();
     let usersImagineChoice= document.getElementById("usersImagine");
     usersImagineChoice.src= `./photos/${user}.JPG`;
-    usersImagineChoice.style.visibility = "visible";
-
-
+    usersImagineChoice.style.display = "block";
 
     if(computer == user) {
         let matchResultComputer= document.getElementById("matchResultComputer");
@@ -36,11 +34,13 @@ playGameButton.addEventListener("click", function play() {
         let matchResultUser= document.getElementById("matchResultUser");
         matchResultUser.innerText = "Looser :(";
         matchResultUser.style.color = "#d11313";
+        usersImagineChoice.src= `./photos/${user}-looser.JPG`;
     }
     else {
         let matchResultComputer= document.getElementById("matchResultComputer");
         matchResultComputer.innerText = "Looser :(";
         matchResultComputer.style.color= "#d11313";
+        computersImagineChoice.src= `./photos/${computer}-looser.JPG`;
 
         let matchResultUser= document.getElementById("matchResultUser");
         matchResultUser.innerText = "Winner!!!";
@@ -48,9 +48,5 @@ playGameButton.addEventListener("click", function play() {
     }
 });
 
-/*function setMatchResult (participantID, result) {
-    let selectedElement= document.getElementById(participantID);
-    selectedElement.innerText= result === "winner" ? "Winner!!!" : result === "looser" ? "Looser :(" : "It's a tie": 
-} */
 
 
